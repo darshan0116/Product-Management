@@ -1,0 +1,8 @@
+[32minfo[39m: receive time: Fri Jul 12 2024 09:13:23 GMT+0530 (India Standard Time)
+method:POST
+traceId : fbb21108-dc3c-48fa-8616-6468c200c50f
+url:/user/login 
+[32minfo[39m:  finish log:traceId:fbb21108-dc3c-48fa-8616-6468c200c50f
+method:POST
+url:/user/login
+completed time:  34ms
