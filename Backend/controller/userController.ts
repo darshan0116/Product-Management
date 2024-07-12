@@ -9,7 +9,7 @@ const signupUser = async (req: requestExtends, res: Response, next: NextFunction
     try {
         await validationHelper(req);
         const signUpData = req.body;
-
+        console.log(signUpData);
         const data = await userService.signupUser(signUpData);
 
 
@@ -21,20 +21,26 @@ const signupUser = async (req: requestExtends, res: Response, next: NextFunction
 }
 
 const loginUser = async (req: requestExtends, res: Response, next: NextFunction) => {
-
     try {
+        console.log("Request body:", req.body); // Log the request body
         await validationHelper(req);
-
-        const {email , password} = req.body;
-        const {loggedUser,token} = await userService.loginUserService(email, password);
-    
-
-        defaultResponses.allDefaultResponse(res, { loggedUser, token }, "successfully login", req.id);
+ 
+        const { email, password } = req.body;
+        console.log("Email:", email); // Log the email
+        console.log("Password:", password); // Log the password for debugging
+ 
+        const { loggedUser, token } = await userService.loginUserService(email, password);
+ 
+        console.log("Logged in user:", loggedUser); // Log the logged-in user
+        console.log("Token:", token); // Log the token
+ 
+        defaultResponses.allDefaultResponse(res, { loggedUser, token }, "Successfully logged in", req.id);
     } catch (error) {
+        console.error("Error in loginUser:", error); // Log the error
         next(error);
     }
-
-}
+ };
+ 
 export const userController = {
     signupUser,
     loginUser

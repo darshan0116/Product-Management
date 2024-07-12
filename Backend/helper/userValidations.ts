@@ -8,7 +8,7 @@ const signupValidation = [
     ]
 
 
-const loginValidation = [
+const loginValidation = [   
     body('email').isEmail().withMessage("email is invalid"),
     body('password').isStrongPassword().withMessage("password is not strong").notEmpty().withMessage("password of user is required").trim()
 ]
