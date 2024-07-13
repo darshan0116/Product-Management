@@ -54,6 +54,56 @@
             "date": 1720761744679,
             "name": "logs\\application.log.2024-52-Fr",
             "hash": "150a71b59e94c03f7d20b9b6f872ff26ad98524d9c7f4cf205877f2852784c6d"
+        },
+        {
+            "date": 1720843261178,
+            "name": "logs\\application.log.2024-31-Sa",
+            "hash": "a9178bddb08047c04b873feef9a9c636e9a8a6a751c29c6678c65a1efa20116a"
+        },
+        {
+            "date": 1720843562304,
+            "name": "logs\\application.log.2024-36-Sa",
+            "hash": "a53df0daa8e788b16e0037bbb9eff4f73b1de5d588e7aa991b2450b0eee4a5f0"
+        },
+        {
+            "date": 1720843621752,
+            "name": "logs\\application.log.2024-37-Sa",
+            "hash": "e6bb9b688045c8c7cd982ac282989eccf24a9252c244c4edd503502000fd4212"
+        },
+        {
+            "date": 1720843697701,
+            "name": "logs\\application.log.2024-38-Sa",
+            "hash": "8eab22c0763c44281f5fec6c870b2f76e9e547169864c2d9d2a8e27aca8681c9"
+        },
+        {
+            "date": 1720843871613,
+            "name": "logs\\application.log.2024-41-Sa",
+            "hash": "fd4ca4c9d00aa6b0da6ee7b0ee13bd512ee725724d173122b8322e43c3c6ebb5"
+        },
+        {
+            "date": 1720844048002,
+            "name": "logs\\application.log.2024-44-Sa",
+            "hash": "80564a122805a2eaf62cebf8abc5599fec7d1eeca6b3152208ba448067ca12bc"
+        },
+        {
+            "date": 1720844217031,
+            "name": "logs\\application.log.2024-46-Sa",
+            "hash": "1c23ccc3162be3a0cbe60a39bab4053cf3efc43b8577f24500c281bf58b1a0d7"
+        },
+        {
+            "date": 1720844231887,
+            "name": "logs\\application.log.2024-47-Sa",
+            "hash": "306d8f926fb81b6e15f9719e88df072833e32ac0c1695aaae29b22bff4ebfc58"
+        },
+        {
+            "date": 1720844284596,
+            "name": "logs\\application.log.2024-48-Sa",
+            "hash": "e78442f76a662ed8e4d6a93239da5f35a45e1a7cea96371527601d0e82b1cc2a"
+        },
+        {
+            "date": 1720844375960,
+            "name": "logs\\application.log.2024-49-Sa",
+            "hash": "16b5062ee5f197f3c220581f906228767cec7217252e1530e52d0ac65d6b3d06"
         }
     ],
     "hashType": "sha256"
