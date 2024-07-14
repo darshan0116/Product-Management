@@ -1,10 +1,10 @@
 import express from "express";
 import dotenv from "dotenv";
-import { connectDb } from "./config/dbConnect";
-import { logger } from "./utils/loggerUtils";
+import { connectDb } from "./app/config/dbConnect";
+import { logger } from "./app/utils/loggerUtils";
 import bodyParser from "body-parser";
 import cors from "cors";
-import router from "./routes";
+import router from "./app/routes";
 
 dotenv.config({ path: ".env" });
 connectDb();

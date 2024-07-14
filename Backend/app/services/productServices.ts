@@ -3,7 +3,7 @@ import { CustomError } from "../interfaces/errorClass";
 import { ProductInterface } from "../interfaces/productInterface";
 
 export const createProduct = async (productData: ProductInterface, userId: number) => {
-    const { name, price, productDesc, stock, productImg, category } = productData;
+    const { name, price, productDesc, stock, productImg } = productData;
 
     const findProduct = await prisma.product.findFirst({
         where: { name }
@@ -25,7 +25,6 @@ export const createProduct = async (productData: ProductInterface, userId: numbe
             price,
             productDesc,
             stock,
-            category,
             productImg: base64Image as string,
             createdBy: userId,
         }
@@ -35,7 +34,7 @@ export const createProduct = async (productData: ProductInterface, userId: numbe
 };
 
 export const updateProduct = async (productData: ProductInterface, productId: number) => {
-    const { name, price, productDesc, stock, productImg, category } = productData;
+    const { name, price, productDesc, stock, productImg } = productData;
 
     const findProduct = await prisma.product.findFirst({
         where: {
@@ -61,7 +60,6 @@ export const updateProduct = async (productData: ProductInterface, productId: nu
             price,
             productDesc,
             stock,
-            category,
             productImg: base64Image as string,
         }
     });

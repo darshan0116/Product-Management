@@ -1,8 +1,0 @@
-[32minfo[39m: receive time: Fri Jul 12 2024 10:52:24 GMT+0530 (India Standard Time)
-method:GET
-traceId : 1d1c0291-3bf5-4489-bcc3-685e5f422725
-url:/product/1 
-[32minfo[39m:  finish log:traceId:1d1c0291-3bf5-4489-bcc3-685e5f422725
-method:GET
-url:/product/1
-completed time:  135ms

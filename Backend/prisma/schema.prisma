@@ -8,15 +8,17 @@ datasource db {
 }
 
 model User {
-  id        Int       @id @default(autoincrement())
-  email     String    @unique
-  firstName String
-  lastName  String
-  password  String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
-  Cart      Cart?
-  Product   Product[]
+  id              Int              @id @default(autoincrement())
+  email           String           @unique
+  firstName       String
+  lastName        String
+  password        String
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
+  Product         Product[]
+  Cart            Cart?
+  paymentCheckOut paymentCheckOut[]
+  Order           Order[]
 }
 
 model Product {
@@ -25,14 +27,15 @@ model Product {
   price       Float
   productDesc String
   productImg  String
-  category    String
   stock       Int
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   createdBy   Int
 
-  createdProduct User        @relation(fields: [createdBy], references: [id], onDelete: Cascade, onUpdate: Cascade)
-  cartItems      cartItems[]
+  createdProduct User @relation(fields: [createdBy], references: [id], onDelete: Cascade, onUpdate: Cascade)
+
+  cartItems  cartItems[]
+  orderItems orderItems[]
 }
 
 model Cart {
@@ -56,4 +59,47 @@ model cartItems {
   product Product @relation(fields: [productId], references: [productId], onDelete: Cascade, onUpdate: Cascade)
 
   @@unique(name: "uniqueCartItem", [cartId, productId])
+}
+
+model Order {
+  id              Int              @id @default(autoincrement())
+  userId          Int
+  userOrder       User             @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  orderDate       DateTime         @default(now())
+  paymentCheckOut paymentCheckOut?
+  orderItems      orderItems[]
+}
+
+model orderItems {
+  id        Int      @id @default(autoincrement())
+  orderId   Int
+  productId Int
+  quantity  Int
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  order   Order   @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  product Product @relation(fields: [productId], references: [productId], onDelete: Cascade, onUpdate: Cascade)
+
+  @@unique(name: "uniqueOrderItem", [orderId, productId])
+}
+
+model paymentCheckOut {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  orderId   Int      @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  totalAmount    Float
+  billingAddress Json
+
+  isbillingSameAsShipping Boolean @default(false)
+
+  shippingAddress Json?
+  email           String
+  phone           String
+  notesOfPayment  String?
+  userPayment            User    @relation(fields: [userId], references: [id], onDelete: Cascade, onUpdate: Cascade)
+  Order           Order   @relation(fields: [orderId], references: [id], onDelete: Cascade, onUpdate: Cascade)
 }
