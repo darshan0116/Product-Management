@@ -25,9 +25,8 @@ const ProductList = () => {
       const productsData = data.result;
       setProducts(productsData);
 
-      // Extract unique categories from products
       const uniqueCategories: string[] = Array.from(new Set(productsData.map((product: ProductProps) => product.category)));
-      setCategories([ ...uniqueCategories]); // Include 'all' as an option
+      setCategories([ ...uniqueCategories]);
     } catch (error: any) {
       toast.error('Error while fetching products');
       throw new Error(error);

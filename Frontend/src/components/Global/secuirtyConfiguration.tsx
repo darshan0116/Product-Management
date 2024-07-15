@@ -19,9 +19,7 @@ const SecurityConfigutation = () => {
         const decoded = jwtDecode<JwtPayload>(loginToken as string);
         const expTime = decoded.exp as number;
         const currentTime = Date.now() / 1000;
-        const isAuthenticated = expTime < currentTime;
-        //validate token and expiry time
-        
+        const isAuthenticated = expTime < currentTime;        
 
         if (isAuthenticated) {
             navigate("/products");

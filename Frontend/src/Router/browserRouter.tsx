@@ -65,7 +65,6 @@ const SuspenseWrapper = ({ children }: { children: JSX.Element}) => (
        },
       ],
       },
-      //not fount page route
 ],
   }
 ]);

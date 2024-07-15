@@ -61,7 +61,7 @@ const updateProduct = async (req: requestExtends, res: Response, next: NextFunct
         const updateProductInfo = await productService.updateProduct(productData, Number(req.params.productId));
         defaultResponses.allDefaultResponse(res, updateProductInfo, "updated product details", req.id);
     } catch (error) {
-        console.error("Error in updateProduct:", error); // Log the error
+        console.error("Error in updateProduct:", error);
         next(error);
     }
 }

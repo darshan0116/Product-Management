@@ -1,4 +1,4 @@
-# Project Name
+# Product Managment
 
 This project includes both frontend and backend components developed using modern technologies.
 

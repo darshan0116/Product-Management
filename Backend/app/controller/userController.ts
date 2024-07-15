@@ -22,21 +22,21 @@ const signupUser = async (req: requestExtends, res: Response, next: NextFunction
 
 const loginUser = async (req: requestExtends, res: Response, next: NextFunction) => {
     try {
-        console.log("Request body:", req.body); // Log the request body
+        console.log("Request body:", req.body); 
         await validationHelper(req);
  
         const { email, password } = req.body;
-        console.log("Email:", email); // Log the email
-        console.log("Password:", password); // Log the password for debugging
+        console.log("Email:", email);
+        console.log("Password:", password);
  
         const { loggedUser, token } = await userService.loginUserService(email, password);
  
-        console.log("Logged in user:", loggedUser); // Log the logged-in user
-        console.log("Token:", token); // Log the token
+        console.log("Logged in user:", loggedUser);
+        console.log("Token:", token);
  
         defaultResponses.allDefaultResponse(res, { loggedUser, token }, "Successfully logged in", req.id);
     } catch (error) {
-        console.error("Error in loginUser:", error); // Log the error
+        console.error("Error in loginUser:", error);
         next(error);
     }
  };
