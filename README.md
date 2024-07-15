@@ -73,3 +73,6 @@ The backend is developed using Node.js, TypeScript, and Prisma ORM.
 ### Deployment
 
 - The backend is ready to be deployed to a cloud platform such as Heroku, AWS, or any other suitable provider.
+
+### Video Link
+This is a demo video for our project. You can watch it [here](https://drive.google.com/file/d/1swXMZNRY7GbwcoOgyEDpgAEZET7qq2pH/view?usp=sharing).
