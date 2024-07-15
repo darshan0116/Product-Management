@@ -6,6 +6,7 @@ import { customError } from "../middleware/errorHandler";
 import productRouter from "./productRoutes";
 import CartRouter from "./cartRoutes";
 import cartItemRouter from "./cartItemRoute";
+import paymentRouter from "./paymentRoute";
 
 const router = Router();
 router.use(loggerHandler);
@@ -14,7 +15,7 @@ router.use("/user", userRoutes);
 router.use("/product", productRouter);
 router.use("/cart", CartRouter);
 router.use("/cartItem", cartItemRouter);
-// router.use('/payment', paymentRouter);
+router.use('/payment', paymentRouter);
 
 router.use(notFoundHandler);
 router.use(customError);

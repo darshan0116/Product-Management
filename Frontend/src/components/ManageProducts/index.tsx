@@ -31,6 +31,7 @@ const Product = () => {
     setLoading(true);
     try {
       const { data } = await getApi('/product/allProducts');
+      console.log("data", data);
       setProducts(data.result);
     } catch (error: any) {
    

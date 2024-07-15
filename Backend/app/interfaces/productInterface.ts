@@ -4,5 +4,5 @@ export interface ProductInterface {
     productDesc: string,
     stock: number,
     productImg:Express.Multer.File; 
-    // category?: string;
+    category: string;
 }

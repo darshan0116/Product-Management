@@ -5,5 +5,6 @@ export type ProductProps = {
     stock: number;
     productImg: string;
     productDesc: string;
+    category: string;
 
 }

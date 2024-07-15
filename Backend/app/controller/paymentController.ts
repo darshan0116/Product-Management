@@ -5,6 +5,7 @@ import { paymentService } from "../services/paymentService";
 
 const createPayment  = async (req: requestExtends, res: Response, next: NextFunction) => {
     try {
+        console.log(req.body);
         const createPaymentInfo = await paymentService.createPayment(req.body , req.user.id);
 
         defaultResponses.allDefaultResponse(res, createPaymentInfo, "created payment details", req.id);

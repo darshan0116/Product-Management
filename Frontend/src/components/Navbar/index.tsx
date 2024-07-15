@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
   return (
     <Header className="navbar">
       <div className="logo">
-        <img src="/satvaLogo.png" alt="logo"  />
+        <img src="/logo.png" alt="logo"  />
       </div>
       <Menu mode="horizontal" className="menu" items={items} onClick={onClick} selectedKeys={[selectedKey]}  style={{ flex: 'auto', minWidth: 0 , justifyContent: 'end' }}>
 

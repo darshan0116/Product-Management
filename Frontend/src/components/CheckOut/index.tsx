@@ -17,6 +17,7 @@ const OrderForm: React.FC = () => {
 
 const paymentApi = async (formattedValues:any) => {
         try {
+          console.log("formated values", formattedValues);
           await postApi('/payment/create', formattedValues);
           
          toast.success(`Payment of $${total} successfully`);
