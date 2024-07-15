@@ -206,9 +206,36 @@ const deleteCartItemService = async (productId: number, cartId: number) => {
   return deleteCartItem;
 };
 
+const decreaseStock = async (cartId: number) => {
+  const cartItems = await prisma.cartItems.findMany({
+    where: {
+      cartId: cartId,
+    },
+  });
+  if (!cartItems) {
+    throw new CustomError(400, "cart not found");
+  }
+  console.log(cartItems,"cartItems");
+
+  for (const cart of cartItems) {
+    console.log(cart);
+    await prisma.product.update({
+      where: {
+        productId: cart.productId,
+      },
+      data: {
+        stock: {
+          decrement: cart.quantity,
+        },
+      },
+    });
+  }
+};
+
 export const cartItemService = {
   createCartItem,
   increaseQuantityByOne,
   decreaseQuantityByOne,
   deleteCartItemService,
+  decreaseStock
 };

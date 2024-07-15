@@ -1,5 +1,6 @@
 import { prisma } from "../config/dbConnect";
 import { CustomError } from "../interfaces/errorClass";
+import { cartItemService } from "./cartItemService";
 import { createOrder } from "./orderService";
 
 const createPayment = async (body: any, userId: number) => {
@@ -12,8 +13,7 @@ const createPayment = async (body: any, userId: number) => {
 
     }
     console.log(rest, "rest");
-
-
+    
     const payment = await prisma.paymentCheckOut.create({
         data: {
             userPayment: {
@@ -31,10 +31,6 @@ const createPayment = async (body: any, userId: number) => {
         }
     });
 
-    console.log("payment");
-    console.log(payment, "2342");
-
-
     return payment;
 }
 
@@ -42,3 +38,4 @@ const createPayment = async (body: any, userId: number) => {
 export const paymentService = {
     createPayment
 }
+

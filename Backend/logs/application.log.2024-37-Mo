@@ -1,0 +1,144 @@
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:07 GMT+0530 (India Standard Time)
+method:PUT
+traceId : bb76ad30-ffea-4a9a-bc43-111d2e13708d
+url:/product/update/3 
+[32minfo[39m:  finish log:traceId:bb76ad30-ffea-4a9a-bc43-111d2e13708d
+method:PUT
+url:/product/update/3
+completed time:  71ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:08 GMT+0530 (India Standard Time)
+method:GET
+traceId : cee7311a-b789-4125-ac0e-d0f6bb56ebe4
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:cee7311a-b789-4125-ac0e-d0f6bb56ebe4
+method:GET
+url:/product/allProducts
+completed time:  11ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:11 GMT+0530 (India Standard Time)
+method:GET
+traceId : 6f63bb00-4074-4828-a3c3-20cebd26ab2c
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:6f63bb00-4074-4828-a3c3-20cebd26ab2c
+method:GET
+url:/product/allProducts
+completed time:  10ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:11 GMT+0530 (India Standard Time)
+method:GET
+traceId : 005dcd5c-a424-463f-83fc-e95b320b31d0
+url:/cart/get 
+[32minfo[39m:  finish log:traceId:005dcd5c-a424-463f-83fc-e95b320b31d0
+method:GET
+url:/cart/get
+completed time:  10ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:13 GMT+0530 (India Standard Time)
+method:GET
+traceId : 6b98cf21-fe59-45b5-b24b-bacb0346798c
+url:/product/3 
+[32minfo[39m:  finish log:traceId:6b98cf21-fe59-45b5-b24b-bacb0346798c
+method:GET
+url:/product/3
+completed time:  11ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:17 GMT+0530 (India Standard Time)
+method:GET
+traceId : 226b35c8-f254-4f17-907c-042007b7eace
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:226b35c8-f254-4f17-907c-042007b7eace
+method:GET
+url:/product/allProducts
+completed time:  11ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:19 GMT+0530 (India Standard Time)
+method:GET
+traceId : a5b7d301-4556-4c40-9713-bdfe86957a43
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:a5b7d301-4556-4c40-9713-bdfe86957a43
+method:GET
+url:/product/allProducts
+completed time:  7ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:19 GMT+0530 (India Standard Time)
+method:GET
+traceId : 27dd45b0-3978-4172-b02e-825c487ff827
+url:/cart/get 
+[32minfo[39m:  finish log:traceId:27dd45b0-3978-4172-b02e-825c487ff827
+method:GET
+url:/cart/get
+completed time:  10ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:20 GMT+0530 (India Standard Time)
+method:GET
+traceId : 6e5522a7-6dde-4010-bfe8-8d445ae9e7ff
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:6e5522a7-6dde-4010-bfe8-8d445ae9e7ff
+method:GET
+url:/product/allProducts
+completed time:  9ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:27 GMT+0530 (India Standard Time)
+method:PUT
+traceId : 84915594-3623-4417-9138-41a68ffebdac
+url:/product/update/3 
+[32minfo[39m:  finish log:traceId:84915594-3623-4417-9138-41a68ffebdac
+method:PUT
+url:/product/update/3
+completed time:  348ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:28 GMT+0530 (India Standard Time)
+method:GET
+traceId : d9d24412-8bbc-4a18-85c3-88a54566df6a
+url:/product/allProducts 
+[32minfo[39m:  finish log:traceId:d9d24412-8bbc-4a18-85c3-88a54566df6a
+method:GET
+url:/product/allProducts
+completed time:  58ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:29 GMT+0530 (India Standard Time)
+method:GET
+traceId : 6a7cba1d-13db-44af-bdec-a5b5c881b995
+url:/product/allProducts 
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:29 GMT+0530 (India Standard Time)
+method:GET
+traceId : 0e69640f-b130-47e3-acb9-264d19268d4f
+url:/cart/get 
+[32minfo[39m:  finish log:traceId:6a7cba1d-13db-44af-bdec-a5b5c881b995
+method:GET
+url:/product/allProducts
+completed time:  49ms
+[32minfo[39m:  finish log:traceId:0e69640f-b130-47e3-acb9-264d19268d4f
+method:GET
+url:/cart/get
+completed time:  97ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:31 GMT+0530 (India Standard Time)
+method:GET
+traceId : 74a4c64a-b488-46fe-8c0f-5e3ff2871f12
+url:/product/3 
+[32minfo[39m:  finish log:traceId:74a4c64a-b488-46fe-8c0f-5e3ff2871f12
+method:GET
+url:/product/3
+completed time:  52ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:33 GMT+0530 (India Standard Time)
+method:POST
+traceId : 9d6a5215-aec1-445e-8bc8-0631fb4a118a
+url:/cartItem/create 
+[32minfo[39m:  finish log:traceId:9d6a5215-aec1-445e-8bc8-0631fb4a118a
+method:POST
+url:/cartItem/create
+completed time:  51ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:33 GMT+0530 (India Standard Time)
+method:GET
+traceId : 8fcdadf9-7ce1-4a5e-b44c-faccad22747b
+url:/cart/get 
+[32minfo[39m:  finish log:traceId:8fcdadf9-7ce1-4a5e-b44c-faccad22747b
+method:GET
+url:/cart/get
+completed time:  56ms
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:40 GMT+0530 (India Standard Time)
+method:GET
+traceId : e9c040f6-477e-4571-a11c-f461205824f4
+url:/product/allProducts 
+[32minfo[39m: receive time: Mon Jul 15 2024 10:37:40 GMT+0530 (India Standard Time)
+method:GET
+traceId : df972943-1649-4270-97d1-4226488da1a9
+url:/cart/get 
+[32minfo[39m:  finish log:traceId:e9c040f6-477e-4571-a11c-f461205824f4
+method:GET
+url:/product/allProducts
+completed time:  57ms
+[32minfo[39m:  finish log:traceId:df972943-1649-4270-97d1-4226488da1a9
+method:GET
+url:/cart/get
+completed time:  92ms

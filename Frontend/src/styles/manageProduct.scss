@@ -1,0 +1,39 @@
+.productContainer{
+    background-color: white ;
+    padding: 2rem;
+    overflow-y: auto;
+.productInfo{
+    @include flex(row , space-between);
+    margin-bottom: 2rem;
+    >h2{
+        @include heading(3px);
+    }
+    >button{
+        @include square(2.5rem);
+        @include flex(row , center , center , 0);
+        font-size: 1.5rem;
+        border-radius: 50%;
+        background-color: rgb(201, 9, 9);
+        color: white;
+        border: none;
+        &:hover {
+          opacity: 0.8;
+        }
+    }
+}
+}
+.productImg {
+    @include square(6rem);
+    object-fit: contain;
+  }
+  
+  .delete-icon {
+    text-align: center;
+    font-size: 25px;
+    color: #6c8289;
+}
+.delete-text {
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+}

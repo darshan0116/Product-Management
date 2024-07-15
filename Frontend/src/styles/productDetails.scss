@@ -1,0 +1,79 @@
+.productDetail {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 40px;
+  border-radius: 10px;
+  width: max-content;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  .ant-card-body {
+    display: flex;
+    padding: 0;
+  }
+
+  .productImage {
+    flex: 1 1 300px;
+    padding: 20px;
+    .productDetailsImage {
+      width: 500px;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .productInfo {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    padding: 20px;
+
+    h1 {
+      font-size: 28px;
+    
+      color: #333;
+    }
+
+    .price {
+      font-size: 22px;
+      font-weight: bold;
+
+    }
+
+    .description {
+
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .quantitySelector {
+      display: flex;
+      align-items: center;
+     
+
+      .ant-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 32px;
+        height: 32px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #f0f0f0;
+        transition: background-color 0.3s;
+
+        &:hover {
+          background-color: #e0e0e0;
+        }
+      }
+
+      .ant-input-number {
+        width: 80px;
+        margin: 0 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}

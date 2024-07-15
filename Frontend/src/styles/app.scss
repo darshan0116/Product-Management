@@ -1,0 +1,119 @@
+@import './mixins.scss';
+@import './login.scss';
+@import './navbar.scss';
+@import './productListing.scss';
+@import './productDetails.scss';
+@import  './manageProduct.scss';
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+
+.loader {
+    width: 100%;
+    height: 100vh;
+    @include flex;
+    > div {
+      @include square(10rem);
+      border-radius: 50%;
+      border-top: 1rem solid rgb(43, 43, 43);
+      border-left: 1rem solid rgb(43, 43, 43);
+      border-right: 1rem solid #fff;
+      border-bottom: 1rem solid #fff;
+      animation: loading-animation 0.5s linear infinite;
+    }
+  }
+  
+  @keyframes loading-animation {
+    to {
+      transform: rotateZ(360deg);
+    }
+  }
+
+
+
+  .cartPage{
+    background-color: white;
+    padding: 2rem;
+    overflow-y: auto;
+    h2{
+        @include heading(3px);
+        margin-bottom:1.5rem ;
+    }
+     .cartInfo{
+      @include flex(row , unset , unset , 2rem);
+        
+     }
+  }
+
+  .cartTotals {
+    width: 25%;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+  
+    .totalsItem {
+    @include flex(row , space-between);
+    margin-bottom: 10px;
+    }
+  
+    .totalsTotal{
+      font-weight: bold;
+    }
+  
+  
+  }
+
+  .quantityControl {
+    display: flex;
+    align-items: center;
+    
+    span {
+      margin: 0 10px;
+      font-size: 18px;
+    }
+    
+    .ant-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      padding: 0;
+    }
+  }
+
+  .orderFormContainer {
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .orderSummary {
+    background: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+  
+    p {
+      display: flex;
+      justify-content: space-between;
+      margin: 10px 0;
+    }
+  }
+
+  .title{
+    @include heading(1px);
+    margin-bottom:1.5rem ;
+  }
+
+  .red {
+    color: red;
+  }
