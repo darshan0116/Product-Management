@@ -2,6 +2,37 @@
 
 This project includes both frontend and backend components developed using modern technologies.
 
+### Video Link
+This is a demo video for our project. You can watch it [here](https://drive.google.com/file/d/1JCGNpdifLyNR9lfeNStPByKu4hsaluSp/view?usp=sharing).
+
+### Technologies Used
+
+- **Node.js**: JavaScript runtime for building scalable network applications.
+- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
+- **Prisma**: Modern database toolkit for TypeScript and Node.js.
+- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
+
+### Project Structure
+
+- **`src/`**: Contains all the source code files.
+- **`src/controllers/`**: Handles the application logic.
+- **`src/models/`**: Defines data models using Prisma.
+- **`src/routes/`**: Defines API routes using Express.js.
+- **`src/services/`**: Implements business logic and interacts with the database.
+- **`src/utils/`**: Contains utility functions.
+- **`src/index.ts`**: Entry point of the application.
+
+### Running the Backend
+
+1. **Install Dependencies**: Run `npm install` to install all required dependencies.
+2. **Run in Development Mode**: Use `npm run dev` to start the server in development mode using Nodemon.
+3. **Run Tests**: Use `npm test` to run tests using your preferred testing framework.
+
+### Deployment
+
+- The backend is ready to be deployed to a cloud platform such as Heroku, AWS, or any other suitable provider.
+
+
 ## Frontend (React)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -47,32 +78,3 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 The backend is developed using Node.js, TypeScript, and Prisma ORM.
 
-### Technologies Used
-
-- **Node.js**: JavaScript runtime for building scalable network applications.
-- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
-- **Prisma**: Modern database toolkit for TypeScript and Node.js.
-- **Express**: Fast, unopinionated, minimalist web framework for Node.js.
-
-### Project Structure
-
-- **`src/`**: Contains all the source code files.
-- **`src/controllers/`**: Handles the application logic.
-- **`src/models/`**: Defines data models using Prisma.
-- **`src/routes/`**: Defines API routes using Express.js.
-- **`src/services/`**: Implements business logic and interacts with the database.
-- **`src/utils/`**: Contains utility functions.
-- **`src/index.ts`**: Entry point of the application.
-
-### Running the Backend
-
-1. **Install Dependencies**: Run `npm install` to install all required dependencies.
-2. **Run in Development Mode**: Use `npm run dev` to start the server in development mode using Nodemon.
-3. **Run Tests**: Use `npm test` to run tests using your preferred testing framework.
-
-### Deployment
-
-- The backend is ready to be deployed to a cloud platform such as Heroku, AWS, or any other suitable provider.
-
-### Video Link
-This is a demo video for our project. You can watch it [here](https://drive.google.com/file/d/1swXMZNRY7GbwcoOgyEDpgAEZET7qq2pH/view?usp=sharing).
